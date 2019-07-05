@@ -50,6 +50,9 @@ void set_gsm_properties();
 void set_lte_properties();
 void set_wifi_properties();
 
+void property_override(char const prop[], char const value[]);
+void property_override_dual(char const system_prop[], char const vendor_prop[], char const value[]);
+
 void set_cdma_properties(const char *operator_alpha, const char *operator_numeric, const char * network);
 void set_target_properties(const char *device, const char *model);
 
